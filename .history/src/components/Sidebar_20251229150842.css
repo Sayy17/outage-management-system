@@ -1,0 +1,130 @@
+.sidebar {
+  background-color: white;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+}
+
+.sidebar.open {
+  width: 256px;
+}
+
+.sidebar.closed {
+  width: 0px;
+}
+
+.sidebar-logo {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.sidebar-logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sidebar-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo-name {
+  font-weight: bold;
+  font-size: 14px;
+  color: #1f2937;
+}
+
+.sidebar-logo-subtitle {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-menu-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: none;
+  transition: all 0.2s;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+
+.sidebar-menu-item.active {
+  background-color: var(--bluie);
+  color: white;
+}
+
+.sidebar-menu-item:not(.active) {
+  color: #4b5563;
+}
+
+.sidebar-menu-item:not(.active):hover {
+  background-color: #f3f4f6;
+}
+
+.sidebar-menu-item svg {
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-menu-label {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidebar-footer {
+  padding: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.sidebar-logout-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+  color: #4b5563;
+  transition: background-color 0.2s;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.sidebar-logout-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.sidebar-logout-btn svg {
+  min-width: 20px;
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,160 @@
+/* PAGE BACKGROUND */
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #f9982f 0%,
+    #ffb357 35%,
+    #fff4e8 65%,
+    #ffffff 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* WRAPPER */
+.login-wrapper {
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+}
+
+/* LOGO */
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.login-logo-icon {
+  width: 46px;
+  height: 46px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.login-logo-text {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* CARD */
+.login-card {
+  background: white;
+  border-radius: 36px;
+  padding: 64px 56px;
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.18),
+    0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+.login-header {
+  margin-bottom: 48px;
+}
+
+.login-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* FORM */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+/* INPUTS */
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d1d5db;
+}
+
+.form-input {
+  width: 100%;
+  height: 52px;
+  padding: 0 18px 0 50px;
+  font-size: 15px;
+  border: 2px solid #f9982f;
+  border-radius: 14px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.form-input:focus {
+  border-color: #f97316;
+}
+
+/* REMEMBER ME */
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: -6px;
+}
+
+.remember-me input {
+  width: 16px;
+  height: 16px;
+  accent-color: #d1d5db;
+}
+
+.remember-me label {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.login-button {
+  margin-top: 6px;
+  height: 52px;
+  border-radius: 14px;
+  background: #303994;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-button:hover {
+  background: #252d75;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(48, 57, 148, 0.35);
+}
